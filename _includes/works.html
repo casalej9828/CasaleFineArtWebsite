@@ -1,0 +1,48 @@
+<section class="alt-section">
+
+	<h3 id="works">Works</h3>
+
+	{% for g in site.data.settings.gallery %}
+		
+
+	<div class="gallery">
+
+		<h4>{{g.name}}</h4>
+	
+		{% assign gallery-list = site.data.art | where:"gallery",{{g.tag}} %}
+		{% for item in gallery-list %}
+
+		
+		
+			{% case item.sold %}
+				{% when '0' %}
+					{% assign $sticker-style = 'display: none' %}
+					{% assign $buy-button-style = '' %}
+					{% capture $price-markup %}<p>$ {{item.price}}.00</p>{% endcapture %}
+				 {% else %}
+				 	{% assign $sticker-style = '' %}
+					{% assign $buy-button-style = 'display: none' %}
+					{% assign $price-markup= '' %}
+			{% endcase %}
+
+
+			<a href="" class="art-unit" style="background-image: url(/assets/img/works/{{ item.image-path }})">
+
+			<div class="sold-sticker" style="{{ $sticker-style }}" ></div>
+
+			<div class="art-overlay">
+				<strong>{{item.name}}</strong>
+				<p>{{item.description}}</p>
+				<p>{{item.dimensions}}</p>
+				{{ $price-markup }}
+				<div class= "purcahse" style="{{$buy-button-style}}">Buy</div>
+
+			</div>
+		{% endfor %}	
+
+		</a>
+		</div>
+	</div>
+
+	{% endfor %}
+</section>

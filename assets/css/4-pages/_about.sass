@@ -1,0 +1,81 @@
+body
+	background-color:  #e2e2e2
+
+
+.about
+	background-color: #e2e2e2
+h3
+	@extend %small-bold
+	color: $accent
+	text-align: center
+	margin: 0
+	padding: 100px 0 30px
+
+.face-lockup
+	max-width: 780px
+	+display(flex)
+	margin: 0 auto
+	+align-items(center)
+	+justify-content(space-around)
+
+
+	.face-img
+		+size(200px)
+		// background: url(/assets/img/#{avatar})
+		Order: 3
+		border-radius: 50%
+
+	[class^="icon"]
+		+size(100px)
+		border-radius: 50%
+		
+		&.icon-palette
+			order: 1
+			background: url(/assets/img/icon-palette.svg) center center $bg-color 
+			background-repeat: no-repeat
+
+		&.icon-path
+			order: 2
+			background: url(/assets/img/icon-path.svg) center center $bg-color
+			background-repeat: no-repeat
+
+		&.icon-html
+			order: 4
+			background: url(/assets/img/icon-html.svg) center center $bg-color
+			background-repeat: no-repeat
+
+		&.icon-sharpener
+			order: 5
+			background: url(/assets/img/icon-sharpener.svg) center center $bg-color
+			background-repeat: no-repeat
+
+@media screen and (max-width: 650px)
+	.face-lockup
+		display: block
+		text-align: center
+
+		div 
+			display: inline-block
+
+		.face-img
+			display: block
+			background-position: center center
+			background-repeat: no-repeat
+			width: auto	
+			margin-bottom: 30px
+
+		[class^="icon"]
+			margin: 10px
+
+
+.blurb
+	padding: 0 15px
+	max-width: 620px
+	margin: 50px auto 50px
+	font-size: 24px
+	text-align: center
+	font-weight: 300
+
+
+
+

@@ -1,0 +1,28 @@
+ # Portfolio settings
+title: Casale Fine Art
+description: Art form the adventures of Jordan Casale
+email: artist@email
+
+#MENU ITEM LIST
+
+menu:
+- {name: Works, url: '#works'}
+- {name: Posts, url: '#posts'}
+- {name: About, url: '#about'}
+
+gallery:
+- {name: 'Studio Works', tag: 'studio'}
+- {name: 'Plein Air Works', tag: 'plein-air'}
+
+#skill-icon:
+#  - icon-palette.svg
+#  - icon-path.svg
+ # - icon-html.svg
+ # - icon-sharpener.svg
+
+# Change the site default images and content here!
+logo: 'logo.svg'
+bg-img: 'bg-img.jpg'
+
+avatar: 'travitar.jpg'
+blurb: <p><strong>Jordan loves to learn.</strong> Jordan was raised in Littleton, Colorado in the shadow of the foothills.  He and his family moved to Goodland 4 years ago to embrace a more community focused life.  Jordan has been painting for 5 years, but his history with art stretches back much farther.  He hopes to express the beauty of God’s creation in a singular moment that normally remains elusive and passes too quickly.

@@ -1,0 +1,59 @@
+header
+	height: 450px
+	background: url(../img/bg-img.jpg) center right
+	background-size: cover
+
+
+	
+
+	nav
+		float: right
+		margin: 30px 30px 0 0 
+		position: relative
+		
+		a
+			@extend %small-bold
+			color: white
+			display: inline-block
+			margin-left: 30px
+
+			&:hover
+				color: #888
+
+	.logo
+		+size(470px)
+		float: left
+		background: url(../img/logo.svg) center center
+		background-size: cover
+		position: absolute
+
+	@media screen and (max-width: 470px)
+		.logo
+			+size(230px)
+
+
+	h1
+		font:
+			size: 72px
+			weight: 700
+		color: white
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		margin-top: 0
+		margin-bottom: 20px
+		padding-top: 100px
+		position: relative
+		padding-left: 20px
+		clear: both
+
+
+	.kicker
+		@extend %small-bold
+		letter-spacing: 0.05em
+		color: white
+		line-height: 1
+		position: relative
+		padding-left: 20px
+
+
+

@@ -1,0 +1,15 @@
+
+<header>
+	<div class="logo"></div>
+
+	<nav>
+		<!-- Generate navigation links for menu list -->
+		{% for link in site.data.settings.menu %}
+		<a href="{{ link.url }}">{{link.name}}</a>
+		{%endfor%}
+	</nav>
+
+	<h1>{{ site.data.settings.title }}</h1>
+	<div class="kicker">{{ site.data.settings.description }}</div>
+
+</header>
