@@ -2,6 +2,7 @@
 
 markdown: kramdown
 permalink: pretty
+github.url: CasaleFineArtWebsite
 
 port: 3000
 
