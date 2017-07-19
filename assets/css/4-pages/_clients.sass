@@ -8,7 +8,8 @@
 
 	.client-unit
 		max-width: 750px
-		margin: 0 auto 50px
+		margin: 0 0 50px -375px
+		+position( absolute, 0px null null 50%)
 		+display(flex)
 
 		.client-face
@@ -50,18 +51,19 @@
 	.client-logo
 		height: 80px
 		min-width: 80px
+		margin: 350px 20px 20px auto
 		background:
 			image: url(/assets/img/clients/painting-1.JPG)
 			size: contain
 			position: center
 			repeat: no-repeat
 		cursor: pointer
-		margin: 0 20px
+
 
 		&.active-client
 			box-shadow: 10px 10px 10px $accent
 			+size(85px)
-			margin-top: -5px
+			margin: 345px 20px auto auto
 
 .client-quote-mark
 	+position(absolute, -18px null null -15px)
