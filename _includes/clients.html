@@ -28,15 +28,9 @@
 	</div>
 
 	<div class="client-logos">
-		<div class="client-logo active-client"></div>
-
-		<div class="client-logo"></div>
-
-		<div class="client-logo"></div>
-
-		<div class="client-logo"></div>
-
-		<div class="client-logo"></div>
+		{% for client in site.data.settings.clients %}
+		<div class="client-logo"style="background-image: url(assets/img/clients/{{client.painting}});"></div>
+		{% endfor %}
 
 	</div>
 
