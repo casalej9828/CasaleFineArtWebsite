@@ -1,0 +1,23 @@
+<section class="section-lightbox">
+
+  <div class ="painting-control">
+    <div class="painting-control-next">{% include icons/icon-next.html %}</div>
+    <div class="painting-control-prev">{% include icons/icon-prev.html %}</div>
+  </div>
+
+  <div class="painting-belt">
+
+    {% for item in site.data.art %}
+    <div class="painting-unit">
+      <img src="/assets/img/works/{{item.image-path}}" alt="{{item.name}}"></img>
+      <div class="painting-info">
+        <h2 id="lightbox">
+          {{item.name}}, {{item.dimensions}} {{item.description}} {{item.price}}
+        </h2>
+        <div class="buy-button">buy</div>
+      </span>
+      </div>
+    </div>
+    {% endfor %}
+
+</section>

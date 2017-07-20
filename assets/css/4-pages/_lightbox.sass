@@ -1,0 +1,98 @@
+//
+// .section-lightbox
+//   width: 100%
+//   height: auto
+//
+//
+//   position: relative
+//   display: block
+//   background-color: rgba(255,255,255,.1)
+//
+//   .painting-control
+//     +position(absolute, 0px 0px 0px 0px)
+//
+//     > div
+//       +size(40px)
+//       margin-top: -20
+//
+//     .painting-control-next
+//       +position(absolute, 50% 10px null null)
+//       //background-color: rgba(255,255,255,.5)
+//
+//     .painting-control-prev
+//       +position(absolute, 50% null null 10px)
+//       //background-color: rgba(255,255,255,.5)
+//
+//   .painting-belt
+//     width: 100%
+//     position: relative
+//
+//     .painting
+//       max-width: 750px
+//       margin: 0 0 50px -375px
+//       +position( absolute, 0px null null 50%)
+//       +display(flex)
+//       display: none
+//
+//       .painting-img
+//         min-height: 800px
+//         max-height: 90%
+//         background-position: center center
+//         background-repeat: no-repeat
+//         background-size: contain
+//         margin: 0 auto
+//
+//       .panting-info
+//         h2
+//           @extend %small-bold
+//           display: inline
+//           float: left
+//
+//       .buy-button
+//         display: inline
+//         float: right
+.section-lightbox
+  position: relative
+
+
+  .painting-control
+    +position(absolute, 0px 0px 0px 0px)
+
+    >div
+      +size(40px)
+    .painting-control-next
+      +position(absolute, 200px 20px null null)
+    .painting-control-prev
+      +position(absolute, 200px null 20px null )
+
+  .painting-belt
+    width: 100%
+    position: relative
+
+    .painting-unit
+      text-align: center
+      max-width: 750px
+      // margin: 0px 0px 0px -375
+      // +position(absolute, 0px null null 50%)
+      position: absolute
+      left: 0
+      right: 0
+      margin: auto
+      display: none
+
+      &.active-painting
+        display: block
+
+      img
+        max-width: 100%
+        max-height: 800px
+
+      .painting-info
+        h2
+          @extend %small-bold
+          display: inline
+          float: left
+
+        .buy-button
+          display: inline
+          float: right

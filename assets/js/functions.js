@@ -2,7 +2,7 @@ $(function() {
 	smoothScroll(300);
 
 	clientStuff();
-
+ 	lightboxStuff();
 
 });
 
@@ -61,6 +61,37 @@ function clientStuff(){
           $('.client-logo').removeClass('active-client').last().addClass('active-client')
         } else {
           $('.active-client').removeClass('active-client').prev().addClass('active-client')
+
+        }
+      }
+
+  });
+}
+
+function lightboxStuff(){
+
+  $('.painting-unit').first().addClass('active-painting');
+
+  $('.painting-control-next, .painting-control-prev').click(function() {
+
+    var $this = $(this),
+      curActivePainting = $('.painting-belt').find('.active-painting'),
+      position = $('.painting-belt').children().index(curActivePainting),
+      paintingNum = $('.painting-unit').length;
+
+      if($this.hasClass('painting-control-next')) {
+
+        if (position < paintingNum -1) {
+          $('.active-painting').removeClass('active-painting').next().addClass('active-painting');
+
+        } else {
+          $('.painting-unit').removeClass('active-painting').first().addClass('active-painting');
+        }
+      } else {
+        if (position === 0) {
+          $('.painting-unit').removeClass('active-painting').last().addClass('active-painting')
+        } else {
+          $('.active-painting').removeClass('active-painting').prev().addClass('active-painting')
 
         }
       }
