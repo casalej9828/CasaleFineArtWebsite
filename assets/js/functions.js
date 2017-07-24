@@ -70,31 +70,50 @@ function clientStuff(){
 
 function lightboxStuff(){
 
-  $('.painting-unit').first().addClass('active-painting');
+	//$('.art-unit').first().addClass('active-art');
+	$('.painting-unit').first().addClass('active-painting');
 
-  $('.painting-control-next, .painting-control-prev').click(function() {
+	//open lightbox and navigate to appropriate painting
+	$('.art-unit').click(function() {
+		var $this = $(this),
+			$siblings = $this.parent().children(),
+			position = $('.art-unit').index($this);
 
-    var $this = $(this),
-      curActivePainting = $('.painting-belt').find('.active-painting'),
-      position = $('.painting-belt').children().index(curActivePainting),
-      paintingNum = $('.painting-unit').length;
 
-      if($this.hasClass('painting-control-next')) {
+			$('.painting-unit').removeClass('active-painting').eq(position).addClass('active-painting');
+			$('.section-lightbox').addClass('active-lightbox');
+	});
 
-        if (position < paintingNum -1) {
-          $('.active-painting').removeClass('active-painting').next().addClass('active-painting');
+	//close lightbox
+	$('.painting-control-close').click(function() {
 
-        } else {
-          $('.painting-unit').removeClass('active-painting').first().addClass('active-painting');
-        }
-      } else {
-        if (position === 0) {
-          $('.painting-unit').removeClass('active-painting').last().addClass('active-painting')
-        } else {
-          $('.active-painting').removeClass('active-painting').prev().addClass('active-painting')
+		$('.section-lightbox').removeClass('active-lightbox');
 
-        }
-      }
+	});
+	
+	//next and prevous button functionality
+	$('.painting-control-next, .painting-control-prev').click(function() {
+		var $this = $(this),
+			curActivePainting = $('.painting-belt').find('.active-painting'),
+			position = $('.painting-belt').children().index(curActivePainting),
+			paintingNum = $('.painting-unit').length;
 
-  });
+			if($this.hasClass('painting-control-next')) {
+				if(position < paintingNum -1) {
+					$('.active-painting').removeClass('active-painting').next().addClass('active-painting');
+				} else {
+					$('.painting-unit').removeClass('active-painting').first().addClass('active-painting');
+				}
+			} else {
+				if(position === 0) {
+					$('.painting-unit').removeClass('active-painting').last().addClass('active-painting');
+				} else {
+					$('.active-painting').removeClass('active-painting').prev().addClass('active-painting');
+
+				}
+			}
+
+
+	});
+
 }

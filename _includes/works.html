@@ -26,17 +26,18 @@
 			{% endcase %}
 
 
-			<a href="" class="art-unit" style="background-image: url({{ site.github.url }}/assets/img/works/{{ item.image-path }})">
+			<div class="art-unit" style="background-image: url({{ site.github.url }}/assets/img/works/{{ item.image-path }})">
 
-			<div class="sold-sticker" style="{{ $sticker-style }}" ></div>
+				<div class="sold-sticker" style="{{ $sticker-style }}" ></div>
 
-			<div class="art-overlay">
-				<strong>{{item.name}}</strong>
-				<p>{{item.description}}</p>
-				<p>{{item.dimensions}}</p>
-				{{ $price-markup }}
-				<div class= "purcahse" style="{{$buy-button-style}}">Buy</div>
+				<div class="art-overlay">
+					<strong>{{item.name}}</strong>
+					<p>{{item.description}}</p>
+					<p>{{item.dimensions}}</p>
+					{{ $price-markup }}
+					<div class= "purcahse" style="{{$buy-button-style}}">Buy</div>
 
+				</div>
 			</div>
 		{% endfor %}
 
