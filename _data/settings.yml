@@ -9,7 +9,6 @@ menu:
 - {name: Works, url: '#works'}
 - {name: Posts, url: '#posts'}
 - {name: About, url: '#about'}
-- {name: lightbox, url: '#lightbox'}
 
 gallery:
 - {name: 'Studio Works', tag: 'studio'}
