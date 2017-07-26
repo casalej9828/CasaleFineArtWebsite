@@ -17,12 +17,10 @@ gallery:
 
 clients:
 - {avatar: 'client-1.JPG', name: 'Peggy Gardine', title: 'Collector', painting:  'painting-1.JPG' ,quote: '<p><strong>I purchased this 16x20 oil painting</strong> by Jordan Casale.  It is of a bridge with buildings behind it.  The painting reminds me of Europe because the buildings look like German apartments, especially the building in the rear.  The colors blend well with each other and fit my decor perfectly.  </p>'}
-- {avatar: 'client-2.jpg', name: 'Millie Lacey', title: 'Collector', painting:  'painting-2.JPG' ,quote: '<p><strong>I bought this painting because it looks exactly like the picture of home I carry in my head</strong>, only made concrete. The colors and light coupled with the brush style give it a blurry, dreamy quality that matches my memories exactly. This painting captured a feeling of peace and wholeness for me that home represents, and every time I look at it I feel that emotion all over again.
- </p>'}
+- {avatar: 'client-2.jpg', name: 'Millie Lacey', title: 'Collector', painting:  'painting-2.JPG' ,quote: '<p><strong>I bought this painting because it looks exactly like the picture of home I carry in my head</strong>, only made concrete. The colors and light coupled with the brush style give it a blurry, dreamy quality that matches my memories exactly. This painting captured a feeling of peace and wholeness for me that home represents, and every time I look at it I feel that emotion all over again.</p>'}
 - {avatar: 'client-3.jpg', name: 'Callee Miller', title: 'Collector', painting:  'painting-1.jpg' ,quote: '<p><strong>I purchased this 16x20 oil painting</strong> by Jordan Casale.  It is of a bridge with buildings behind it.  The painting reminds me of Europe because the buildings look like German apartments, especially the building in the rear.  The colors blend well with each other and fit my decor perfectly.  </p>'}
-- {avatar: 'client-1.JPG', name: 'Josh Dorn', title: 'Collector', painting:  'painting-1.JPG' ,quote: '<p><strong>I purchased this 16x20 oil painting</strong> by Jordan Casale.  It is of a bridge with buildings behind it.  The painting reminds me of Europe because the buildings look like German apartments, especially the building in the rear.  The colors blend well with each other and fit my decor perfectly.  </p>'}
-- {avatar: 'client-1.JPG', name: 'Samantha Philbrick', title: 'Collector', painting:  'painting-1.JPG' ,quote: '<p><strong>Jordan Casale painted a farm mural</strong> for the High Plains Museum.  The mural highlights the four most common crops grown in our county: wheat, corn, sorghum or milo, and sunflowers.  This mural is part of the renovation of the farm exhibit and will help tell the story of Sherman County farming in greater detail.
- </p>'}
+- {avatar: 'client-4.jpg', name: 'Josh Dorn', title: 'Collector', painting:  'painting-1.JPG' ,quote: '<p><strong>I purchased this 16x20 oil painting</strong> by Jordan Casale.  It is of a bridge with buildings behind it.  The painting reminds me of Europe because the buildings look like German apartments, especially the building in the rear.  The colors blend well with each other and fit my decor perfectly.  </p>'}
+- {avatar: 'client-5.jpg', name: 'Samantha Philbrick', title: 'Director of High Plains Museum', painting:  'painting-5.JPG' ,quote: '<p><strong>Jordan Casale painted a farm mural</strong> for the High Plains Museum.  The mural highlights the four most common crops grown in our county: wheat, corn, sorghum or milo, and sunflowers.  This mural is part of the renovation of the farm exhibit and will help tell the story of Sherman County farming in greater detail.</p>'}
 
 
 #skill-icon:
@@ -35,5 +33,5 @@ clients:
 logo: 'logo.svg'
 bg-img: 'bg-img.jpg'
 
-avatar: 'travitar.jpg'
+avatar: 'jordan.jpg'
 blurb: <p><strong>Jordan loves to learn.</strong> Jordan was raised in Littleton, Colorado in the shadow of the foothills.  He and his family moved to Goodland 4 years ago to embrace a more community focused life.  Jordan has been painting for 5 years, but his history with art stretches back much farther.  He hopes to express the beauty of God’s creation in a singular moment that normally remains elusive and passes too quickly.
