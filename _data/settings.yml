@@ -1,7 +1,7 @@
  # Portfolio settings
 title: Casale Fine Art
 description: Art from the adventures of Jordan Casale
-email: artist@email
+email: jordan@casalefineart.com
 
 #MENU ITEM LIST
 
@@ -9,7 +9,7 @@ menu:
 - {name: Works, url: '#works'}
 - {name: Posts, url: '#posts'}
 - {name: About, url: '#about'}
-- {name: lightbox, url: '#lightbox'}
+- {name: Contact, url: '#form'}
 
 gallery:
 - {name: 'Studio Works', tag: 'studio'}
