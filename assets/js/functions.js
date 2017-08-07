@@ -3,6 +3,7 @@ $(function() {
 
 	clientStuff();
  	lightboxStuff();
+	buybutton();
 
 });
 
@@ -90,7 +91,7 @@ function lightboxStuff(){
 		$('.section-lightbox').removeClass('active-lightbox');
 
 	});
-	
+
 	//next and prevous button functionality
 	$('.painting-control-next, .painting-control-prev').click(function() {
 		var $this = $(this),
@@ -116,4 +117,20 @@ function lightboxStuff(){
 
 	});
 
+}
+
+
+function buybutton() {
+	$('.purchase').click(function() {
+		var $this = $(this),
+		paintingMessage = "Hello Jordan,  I am interested in your painting called ",
+		$siblings = $this.parent().children(),
+		paintingName = $siblings.html()
+
+		paintingMessage = paintingMessage + paintingName
+		paintingMessage = paintingMessage + ".  Please email me at your earliest convienice."
+		document.getElementById("message").value = paintingMessage;
+
+		console.log(paintingName)
+	});
 }

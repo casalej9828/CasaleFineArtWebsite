@@ -31,11 +31,11 @@
 				<div class="sold-sticker" style="{{ $sticker-style }}" ></div>
 
 				<div class="art-overlay">
-					<strong>{{item.name}}</strong>
+					<strong id="painting-name">{{item.name}}</strong>
 					<p>{{item.description}}</p>
 					<p>{{item.dimensions}}</p>
 					{{ $price-markup }}
-					<div class= "purcahse" style="{{$buy-button-style}}">Buy</div>
+					<button class= "purchase" href="#form" style="{{$buy-button-style}}">Buy</button>
 
 				</div>
 			</div>
