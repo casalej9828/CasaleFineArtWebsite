@@ -79,7 +79,7 @@ function lightboxStuff(){
 		var $this = $(this),
 			$siblings = $this.parent().children(),
 			position = $('.art-unit').index($this);
-
+			console.log( $this )
 
 			$('.painting-unit').removeClass('active-painting').eq(position).addClass('active-painting');
 			$('.section-lightbox').addClass('active-lightbox');
@@ -114,7 +114,6 @@ function lightboxStuff(){
 				}
 			}
 
-
 	});
 
 }
@@ -123,14 +122,24 @@ function lightboxStuff(){
 function buybutton() {
 	$('.purchase').click(function() {
 		var $this = $(this),
-		paintingMessage = "Hello Jordan,  I am interested in your painting called ",
+
+		paintingMessage = "Hello Jordan,  I am interested in the following painting.",
 		$siblings = $this.parent().children(),
 		paintingName = $siblings.html()
 
 		paintingMessage = paintingMessage + paintingName
-		paintingMessage = paintingMessage + ".  Please email me at your earliest convienice."
+		paintingMessage = paintingMessage + "  Please email me at your earliest connivence."
 		document.getElementById("message").value = paintingMessage;
 
-		console.log(paintingName)
+		//close light box
+		$('.section-lightbox').removeClass('active-lightbox');
+
+
+
+		//Scroll down to the mesage form
+		$('html, body').animate({
+				scrollTop: $('.form').offset().top
+		}, 300);
+
 	});
 }

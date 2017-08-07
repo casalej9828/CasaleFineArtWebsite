@@ -10,13 +10,23 @@
   <div class="painting-belt">
 
     {% for item in site.data.art %}
+      {% case item.sold %}
+        {% when '0' %}
+
+          {% assign $buy-button-style = '' %}
+          {% capture $price-markup %}$ {{item.price}}.00{% endcapture %}
+         {% else %}
+          {% assign $buy-button-style = 'display: none' %}
+          {% assign $price-markup= '' %}
+      {% endcase %}
     <div class="painting-unit">
+
       <img src="/assets/img/works/{{item.image-path}}" alt="{{item.name}}"></img>
       <div class="painting-info">
         <h2 id="lightbox">
-          {{item.name}}, {{item.dimensions}} {{item.description}} {{item.price}}
+          {{item.name}}, {{item.dimensions}} {{item.description}} {{ $price-markup }}
         </h2>
-        <div class="buy-button">buy</div>
+        <button class= "purchase" href="#form" style="{{$buy-button-style}}">Buy</button>
       </span>
       </div>
     </div>
