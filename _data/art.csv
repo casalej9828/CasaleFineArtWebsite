@@ -2,7 +2,7 @@ name,gallery,description,dimensions,image-path,sold,price
 Gallup,studio,Oil on stretched canvas,,Gallup.png,1,150
 Ralphie,studio,Oil on stretched canvas,,Ralphie.jpg,1,150
 Tired,studio,Oil on stretched canvas,,Tired.jpg,1,500
-Br�cke,studio,Oil on stretched canvas,,Br�cke.JPG,1,150
+Brucke,studio,Oil on stretched canvas,,Brucke.JPG,1,150
 How Now 1,studio,Oil on paper,,How_Now_1.jpg,1,45
 Twilight,studio,Oil on Hard Board,,Twilight.jpg,1,
 How Now 2,studio,Oil on paper,,How_Now_2.jpg,1,45
@@ -30,6 +30,6 @@ Hibiya Park,plein-air,Oil on Canvas Board,,,0,80
 House Near Shinge Station,plein-air,Oil on Canvas Board,,,0,80
 Nintoku Park(???) ,plein-air,Oil on Canvas Board,,,0,80
 Disen Park (????),plein-air,Oil on Canvas Board,,,0,80
-Fushimi Inari-taisha (??????),studio,Oil on stretched canvas,,,0,500
-"Shinsen-en (???), by Ni-jo Castle, Kyoto",studio,Oil on stretched canvas,,,0,500
-?tori Taisha (????),studio,Oil on stretched canvas,,,0,500
+Fushimi Inari-taisha (??????),studio,Oil on stretched canvas,,Fushimi_Inari-taisha_studio.jpg,0,500
+"Shinsen-en (???), by Ni-jo Castle, Kyoto",studio,Oil on stretched canvas,,Shinsen-en_studio.jpg,1,500
+Otori Taisha (????),studio,Oil on stretched canvas,,Otori_Taisha_studio.jpg,0,500
